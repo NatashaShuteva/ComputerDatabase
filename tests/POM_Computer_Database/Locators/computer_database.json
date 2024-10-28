@@ -1,0 +1,24 @@
+{
+    "homepage": {
+      "bookStoreAppHeading": "role=heading[name='Book Store Application']",
+      "profileLink": "li:text('Profile')",
+      "notLoggedText": "text=Currently you are not logged",
+      "apiLink": "text=Book Store API",
+      "apiHeading": "role=heading[name='Book Store API v1 OAS']"
+    },
+    "computerDatabase": {
+      "pageTitleLink": "role=link[name='Computer database']",
+      "addNewComputerLink": "role=link[name='Add a new computer']",
+      "computerNameLabel": "//input[@id='name']",
+      "introducedLabel": "//input[@id='introduced']",
+      "discontinuedLabel": "//input[@id='discontinued']",
+      "companySelect": "//select[@id='company']",
+      "createButton": "role=button[name='Create this computer']",
+      "successMessage": "div.alert-message.warning",
+      "searchPlaceholder": "//input[@id='searchbox']",
+      "filterButton": "role=button[name='Filter by name']",
+      "labelText": "h1:has-text('computers found')",
+      "rowCount": "table tbody tr"
+    }
+  }
+  
