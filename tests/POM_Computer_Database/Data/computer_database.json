@@ -1,0 +1,47 @@
+{
+    "homepageUrl": "https://computer-database.gatling.io/computers",
+    "expectedMessages": {
+      "pageTitleText": "Computer database",
+      "successMessage": "Done ! Computer Natasha has been created",
+      "searchResultText": "6 computers found"
+    },
+    "computerData": [
+      {
+        "name": "Natasha",
+        "introduced": "1990-02-14",
+        "discontinued": "2024-10-25",
+        "company": "RCA"
+      },
+      {
+        "name": "Computer1",
+        "introduced": "1990-02-14",
+        "discontinued": "2024-10-25",
+        "company": "5"
+      },
+      {
+        "name": "Computer2",
+        "introduced": "1991-03-15",
+        "discontinued": "2025-09-30",
+        "company": "6"
+      },
+      {
+        "name": "Computer3",
+        "introduced": "1992-04-16",
+        "discontinued": "2026-08-20",
+        "company": "7"
+      },
+      {
+        "name": "Computer4",
+        "introduced": "1993-05-17",
+        "discontinued": "2027-07-10",
+        "company": "8"
+      },
+      {
+        "name": "Computer5",
+        "introduced": "1994-06-18",
+        "discontinued": "2028-06-05",
+        "company": "9"
+      }
+    ]
+  }
+  
