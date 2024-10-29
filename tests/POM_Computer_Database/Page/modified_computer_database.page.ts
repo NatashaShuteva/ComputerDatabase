@@ -2,15 +2,15 @@ import { Page, Locator, expect } from '@playwright/test';
 import * as fs from 'fs';
 import * as path from 'path';
 
-const locatorsPath = path.resolve(__dirname, '../../POM_Computer_Database/Locators/computer_database.json');
+const locatorsPath = path.resolve(__dirname, '../../POM_Computer_Database/Locators/modified_computer_database.json');
 const rawLocators = fs.readFileSync(locatorsPath, 'utf8');
 const locators = JSON.parse(rawLocators);
 
-const dataPath = path.resolve(__dirname, '../../POM_Computer_Database/Data/computer_database.json');
+const dataPath = path.resolve(__dirname, '../../POM_Computer_Database/Data/modified_computer_database.json');
 const rawData = fs.readFileSync(dataPath, 'utf8');
 const data = JSON.parse(rawData);
 
-export class DemoQAPage {
+export class ModifiedComputerDatabase {
   readonly page: Page;
   readonly homepageUrl: string;
   readonly pageTitleLink: Locator;
@@ -53,22 +53,11 @@ export class DemoQAPage {
   }
 
   async navigate() {
-    await this.page.goto(this.homepageUrl);
+    await this.page.goto('/');
   }
 
   async verifyPageTitle() {
-    await expect(this.pageTitleLink).toHaveText(this.expectedPageTitleText);
-  }
-
-  async addNewComputer(name: string, introduced: string, discontinued: string, company: string) {
-    await this.addNewComputerLink.click();
-    await this.computerNameLabel.fill(name);
-    await this.introducedLabel.fill(introduced);
-    await this.discontinuedLabel.fill(discontinued);
-    await this.companySelect.click();
-    await this.companySelect.selectOption(company);
-    await this.createButton.click();
-    await expect(this.successMessage).toContainText(`Computer ${name} has been created`);
+    await expect(this.pageTitleLink).toHaveText('Computer database');
   }
 
   async verifySearchRecords() {
@@ -82,10 +71,3 @@ export class DemoQAPage {
   }
   
 }
-
-
-//1.in this test case add huck befor each for the follwoing method
-//2. crete two pages one for navigate and search another for crete new computer
-//3. In the data file don't define the url and validation ( jst add the data for adding new computer)
-//4. Add new computer metod separte on 4 small methods is very difficalt for deaging this
-//5.change the name of the class to don't be DemoQAPage
