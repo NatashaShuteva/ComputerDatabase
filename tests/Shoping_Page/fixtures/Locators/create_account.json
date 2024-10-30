@@ -1,0 +1,12 @@
+{
+    "createAccountLink": "(//a[@href=\"https://magento.softwaretestingboard.com/customer/account/create/\"])[1]",
+    "firstNameInput": "//input[@id=\"firstname\"]",
+    "lastNameInput": "//input[@id=\"lastname\"]",
+    "emailInput": "//input[@id=\"email_address\"]",
+    "passwordInput": "(//input[@name=\"password\"])[1]",
+    "passwordConfirmInput": "//input[@name=\"password_confirmation\"]",
+    "submitButton": "//button[@class=\"action submit primary\"]",
+    "loggedInMessage": "(//span[@class=\"logged-in\"])[1]",
+    "accountBaseMessage": "//span[@class=\"base\"]"
+  }
+  

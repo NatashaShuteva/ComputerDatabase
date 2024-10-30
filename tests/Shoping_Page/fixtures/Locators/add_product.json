@@ -1,0 +1,13 @@
+{
+    "createAccountLink": "(//a[@href=\"https://magento.softwaretestingboard.com/customer/account/create/\"])[1]",
+    "uiMenuIcon": "//span[@class='ui-menu-icon ui-icon ui-icon-carat-1-e']",
+    "categoryItem": "//li[@class='level1 nav-2-1 category-item first parent ui-menu-item']",
+    "categoryLink": "//a[@id='ui-id-11']",
+    "categoryItemSelector": "//li[contains(text(), 'Juno Jacket Rating: 87% 3')]",
+    "sizeSelector": "(//div[@aria-label='M'])[1]",
+    "colorSelector": "(//div[@option-label='Blue'])[1]",
+    "addToCartButton": "(//button[@title='Add to Cart'])[1]",
+    "myCartLink": "//span[@class='counter-number']",
+    "proceedToCheckout": "//button[@id='top-cart-btn-checkout']"
+  }
+  
