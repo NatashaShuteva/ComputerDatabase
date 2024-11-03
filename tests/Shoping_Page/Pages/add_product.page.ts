@@ -13,9 +13,15 @@ const data = JSON.parse(rawData);
 
 export class ProductPage {
   readonly page: Page;
+  
 
   constructor(page: Page) {
     this.page = page;
+
+    this.page.on('dialog', async dialog => {
+       console.log(`Dialog message: ${dialog.message()}`);
+        await dialog.accept(); });
+        
   }
 
   async navigate() {
@@ -55,4 +61,17 @@ export class ProductPage {
   async verifyProductInCart() {
     await expect(this.page.locator(locators.proceedToCheckout)).toContainText('Proceed to Checkout');
   }
+
+  async clickOnTheShopBin(){
+    await this.page.locator(locators.clickOnTheShopingBin).click();
+  }
+
+  async clickConfirmButton() {
+     await this.page.locator(locators.confirmButton).click();
+     }
+
+     async verifyProductInDeleted() {
+      await expect(this.page.locator(locators.verifyPopupMessage)).toContainText('You have no items in your shopping cart.');
+    }
+
 }

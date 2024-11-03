@@ -8,6 +8,9 @@
     "colorSelector": "(//div[@option-label='Blue'])[1]",
     "addToCartButton": "(//button[@title='Add to Cart'])[1]",
     "myCartLink": "//span[@class='counter-number']",
-    "proceedToCheckout": "//button[@id='top-cart-btn-checkout']"
+    "proceedToCheckout": "//button[@id='top-cart-btn-checkout']", 
+    "clickOnTheShopingBin": "//a[@title='Remove item']",
+    "confirmButton": "//button[@class='action-primary action-accept']",
+    "verifyPopupMessage": "(//div[@class='block-content'])[1]"
   }
   
