@@ -6,7 +6,7 @@ test.beforeEach('Open login page', async ({ page }) => {
     await registerPage.navigate();
 });
 
-test('Register new user and verify that is created', async ({ page }) => {
+test('@smoke Register new user and verify that is created', async ({ page }) => {
   const registerPage = new RegisterPage(page);
   await registerPage.clickCreateAccountLink();
   await registerPage.fillFirstName();

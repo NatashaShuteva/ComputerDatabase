@@ -1,0 +1,15 @@
+{
+    "createAccountLink": "(//a[@href=\"https://magento.softwaretestingboard.com/customer/account/create/\"])[1]",
+    "uiMenuIcon": "//span[@class='ui-menu-icon ui-icon ui-icon-carat-1-e']",
+    "categoryItem": "//li[@class='level1 nav-2-1 category-item first parent ui-menu-item']",
+    "categoryLink": "//a[@id='ui-id-11']",
+    "categoryItemSelector": "//li[contains(text(), 'Juno Jacket Rating: 87% 3')]",
+    "clcikonthefisrtcard" : "(//img[@class='product-image-photo'])[1]",
+    "clicaddtocompare": "(//a[@class='action tocompare'])[1]",
+    "clcikonthesecondcard" : "(//img[@class='product-image-photo'])[2]",
+    "clickonthecomparelink" : "//a[contains(@href, '/catalog/product_compare/') and contains(text(), 'comparison list')]",
+    "jusnojacket" : "(//a[@title='Juno Jacket'])[2]",
+    "olivajacket" : "(//a[@title='Olivia 1/4 Zip Light Jacket'])[2]",
+    "hoverTopsmenu": "//a[@id='ui-id-9']",
+    "tablegrid" : "//td[@class='cell product info']"
+}

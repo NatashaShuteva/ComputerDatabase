@@ -24,4 +24,7 @@ test('add one product and verify that is added', async ({ page }) => {
   await productPage.addToCart();
   await productPage.clickMyCartLink();
   await productPage.verifyProductInCart();
+  await productPage.clickOnTheShopBin();
+  await productPage.clickConfirmButton();
+  await productPage.verifyProductInDeleted();
 });
