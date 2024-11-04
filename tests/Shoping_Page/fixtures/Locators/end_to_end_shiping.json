@@ -1,0 +1,12 @@
+{
+    "addEmailloc": "#login-form #customer-email", 
+    "addFirstNameloc":"//input[@name='firstname']",
+    "addLastNameloc": "//input[@name='lastname']",
+    "addAdressloc": "//input[@name='street[0]']",
+    "addCityloc" : "//input[@name='city']",
+    "addZipCodeloc": "//input[@name='postcode']",
+    "selectCountryloc": "//select[@name='country_id']",
+    "addPhoneNumloc": "//input[@name='telephone']",
+    "clickNextButtonloc" : "//button[@class='button action continue primary']"
+   
+}
