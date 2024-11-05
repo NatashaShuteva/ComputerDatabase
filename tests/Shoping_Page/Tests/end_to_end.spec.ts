@@ -35,5 +35,7 @@ test('add one product and verify that is added', async ({ page }) => {
   await shipingPage.addZipCode();
   await shipingPage.selectContry();
   await shipingPage.addPhoneNumber();
-  //await shipingPage.clickOnTheNextButton();
+  await shipingPage.clickOnTheNextButton();
+  await shipingPage.clickOnThePlaceOrderButton();
+  await shipingPage.successPurchase();
 });

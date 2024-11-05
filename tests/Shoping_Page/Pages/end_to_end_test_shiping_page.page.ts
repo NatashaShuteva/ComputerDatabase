@@ -57,10 +57,41 @@ export class ShippingPage {
   }
 
   async clickOnTheNextButton() {
+    // Navigate to the page and wait until the load event is fired 
+    await this.page.goto('https://magento.softwaretestingboard.com/checkout/#shipping', { waitUntil: 'load' });
+     // Replace with your actual URL 
+     // Optionally, you can perform additional actions or assertions after the page is fully loaded 
+     const content = await this.page.content(); 
+     console.log(content); 
+     // Example assertion to check if a specific element is present 
+     const exampleElement = this.page.locator('button[data-role="opc-continue"][type="submit"].button.action.continue.primary'); 
+     // Replace with your actual element selector 
+     await expect(exampleElement).toBeVisible();
     //await this.page.locator(locators.clickNextButtonloc).click(); 
+    await this.page.getByRole('button', { name: 'Next' }).click();
+
+    await this.page.reload();
+    const exampleElement2 = this.page.locator('button[data-role="opc-continue"][type="submit"].button.action.continue.primary'); 
+    // Replace with your actual element selector 
+    await expect(exampleElement2).toBeVisible();
     await this.page.getByRole('button', { name: 'Next' }).click();
    // await page.getByRole('button', { name: 'Place Order' }).click();
    // await expect(page.getByText('Thank you for your purchase!')).toBeVisible();
+   //wiat radio button to be displyed
+  }
+
+  async clickOnThePlaceOrderButton(){
+    await this.page.locator(locators.placeorderloc).click();
+  }
+
+  async successPurchase(){
+    const content = await this.page.content(); 
+     console.log(content); 
+     // Example assertion to check if a specific element is present 
+     const exampleElement = this.page.locator((locators.successpurchaseloc)); 
+     // Replace with your actual element selector 
+     await expect(exampleElement).toBeVisible();
+    await expect(this.page.locator(locators.successpurchaseloc)).toContainText('Thank you for your purchase!');
   }
 
 }  
