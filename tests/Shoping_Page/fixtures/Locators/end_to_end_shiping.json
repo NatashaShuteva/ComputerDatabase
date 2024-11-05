@@ -7,6 +7,8 @@
     "addZipCodeloc": "//input[@name='postcode']",
     "selectCountryloc": "//select[@name='country_id']",
     "addPhoneNumloc": "//input[@name='telephone']",
-    "clickNextButtonloc" : "//button[@class='button action continue primary']"
+    "clickNextButtonloc" : "//button[@class='button action continue primary']",
+    "placeorderloc": "button.action.primary.checkout",
+    "successpurchaseloc" : "//span[@data-ui-id='page-title-wrapper']"
    
 }
